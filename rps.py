@@ -7,7 +7,7 @@ def play():
     user = input("\nWhat's your choice? 'r' for rock, 'p' for papers, and 's' for scissors. ")
     computer = random.choice(['r', 'p', 's'])
     
-    if user == 'q':
+    if user == 'q': # If the user gives the input as q the program breaks.
         return "Thanks for playing the game."
         
     elif user == computer :
