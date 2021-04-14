@@ -1,25 +1,31 @@
 import random
 
-#print("\nEnter 'q' to exit any time.")
+
+# print("\nEnter 'q' to exit any time.")
 def play():
     """Takes the user input and prints if he won or lost."""
-   
-    user = input("\nWhat's your choice? 'r' for rock, 'p' for papers, and 's' for scissors. ")
-    computer = random.choice(['r', 'p', 's'])
-    
-    #if user == 'q': # If the user gives the input as q the program breaks.
-    #    return "\nThanks for playing the game."
-        
+    user = None
+    while user is None:
+        user = input(
+            "\nWhat's your choice? 'r' for rock, 'p' for papers, and 's' for scissors. "
+        )
+        if user not in ["r", "p", "s"]:
+            print(f"Sorry! {user} is not a valid choice, please try again")
+            user = None
 
-    if user == computer :
+    computer = random.choice(["r", "p", "s"])
+
+    # if user == 'q': # If the user gives the input as q the program breaks.
+    #    return "\nThanks for playing the game."
+
+    if user == computer:
         return "\nIt's a tie."
-        
-            
+
     if winner(user, computer):
         return "\nYou won!"
-            
 
     return "\nYou lose!"
+
 
 def rps_loop(end_char="q"):
     """
@@ -37,15 +43,20 @@ def rps_loop(end_char="q"):
         else:
             print("\nThanks for playing.")
             break
-        
+
+
 def winner(player, opponent):
     """Logic of the game."""
 
-    if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
+    if (
+        (player == "r" and opponent == "s")
+        or (player == "s" and opponent == "p")
+        or (player == "p" and opponent == "r")
+    ):
 
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(play())
     rps_loop()
