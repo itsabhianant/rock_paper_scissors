@@ -45,5 +45,7 @@ def winner(player, opponent):
 
         return True
 
-print(play())
-rps_loop()
+
+if __name__ == '__main__':
+    print(play())
+    rps_loop()
