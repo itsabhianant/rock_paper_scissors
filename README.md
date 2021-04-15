@@ -17,7 +17,7 @@ This is a very famous game of rock-paper-scissors that everyone had played atlea
 Yes, anyone interested can contribute in this project.
 
 ---
-Yes you can take and use this code as this project itself is inpired from someone else's program, and by inspire I mean only a part of this program's logic has been inspired.
+Yes you can take and use this code as this project itself is inpired from someone else's programme, and by inspire I mean only a part of this program's logic has been inspired.
 
 ---
 
