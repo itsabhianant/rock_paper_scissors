@@ -16,6 +16,11 @@ using std::endl;
 void display_rules ();
 void not_display_rules ();
 int no_of_matches();
+void welcome_and_rules();
+char user_move();
+char computer_move();
+int compare_moves(char user, char computer);
+void print_result(int user, int computer);
 
 
 // Creating the class Player
