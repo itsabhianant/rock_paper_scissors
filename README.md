@@ -5,11 +5,15 @@ This is a very famous game of rock-paper-scissors that everyone had played atlea
 ---
 
 ## How to play?
-
+# In case of python version:
 1. Clone this repository: ```git clone git@github.com:itsabhianant/rock_paper_scissors.git```
 2. Run ```rps.py```
 
+# In case of c++ version:
 
+1. Clone this repository: ```git clone git@github.com:itsabhianant/rock_paper_scissors.git```
+2. Run  ```make a```
+3. Run ```./a```
 ---
 
 ## Can I contribute:
