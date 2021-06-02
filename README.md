@@ -9,7 +9,7 @@ This is a very famous game of rock-paper-scissors that everyone had played atlea
 1. Clone this repository: ```git clone git@github.com:itsabhianant/rock_paper_scissors.git```
 2. Run ```rps.py```
 
-#In case of c++ version:
+# In case of c++ version:
 
 1. Clone this repository: ```git clone git@github.com:itsabhianant/rock_paper_scissors.git```
 2. Run  ```make a```
