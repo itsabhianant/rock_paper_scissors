@@ -67,7 +67,46 @@ int no_of_matches() {
     return match;
 }
 
+void play_game() {
 
+    int match = no_of_matches();
+
+    Player user;
+    Player computer;
+
+    for (int i = 0; i < match ; i++) {
+        // Getting the move of the user
+        user.set_move(user_move());
+
+
+        // Getting the move of the computer
+        computer.set_move(computer_move());
+        cout << "My move: " << computer.get_move() << endl;
+
+        // Comparing the results
+        int win_num = compare_moves(user.get_move(), computer.get_move());
+        
+        switch (win_num){
+
+        case 1: 
+            computer.set_score();
+            break;
+        
+        case 2:
+            user.set_score();
+            break;
+
+        default:
+            computer.set_score(0);
+            user.set_score(0);
+            break;
+        }
+        
+    }
+
+    // Prints the results of the tournament
+    print_result(user.get_score(), computer.get_score());
+}
 // Getting the user's move
 char user_move() {
     bool correct_move {true};

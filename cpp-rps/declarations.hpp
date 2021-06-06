@@ -35,3 +35,5 @@ class Player {
         void set_score(int s = 1);  // Setter for score
         int get_score ();           // Getter for score
 };
+
+void play_game();
