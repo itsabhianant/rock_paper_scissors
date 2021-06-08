@@ -1,6 +1,6 @@
 # ROCK-PAPER-SCISSORS:
 
-This is a very famous game of rock-paper-scissors that everyone had played atleast one time in their life. This is a beginner-friendly project in Python.
+This is a game of rock-paper-scissors that everyone had played atleast one time in their life. This is a beginner-friendly project in Python.
 
 ---
 
